@@ -1,7 +1,302 @@
-<html>
-	<head>
-	</head>
-	<body>
-		<h1>Website do Núcleo de Design de Jogos Digitais</h1>
-	</body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+<meta name="description" content="">
+<meta name="keywords" content="">
+<meta name="author" content="">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<title>JAM ODYSSEY</title>
+<!--
+
+Template 2085 Neuron
+
+http://www.tooplate.com/view/2085-neuron
+
+-->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/font-awesome.min.css">
+
+<!-- Main css -->
+<link rel="stylesheet" href="css/style.css">
+<link href="https://fonts.googleapis.com/css?family=Lora|Merriweather:300,400" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet"> 
+</head>
+<body>
+
+<!-- PRE LOADER -->
+
+<div class="preloader">
+     <div class="sk-spinner sk-spinner-wordpress">
+          <span class="sk-inner-circle"></span>
+     </div>
+</div>
+
+<!-- Navigation section  -->
+
+<div class="navbar navbar-default navbar-static-top" role="navigation">
+     <div class="container">
+
+          <div class="navbar-header">
+               <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+                    <span class="icon icon-bar"></span>
+               </button>
+               <a href="index.html" class="navbar-brand">NEDJD</a>
+          </div>
+          <div class="collapse navbar-collapse">
+               <ul class="nav navbar-nav navbar-right">
+                    <li class="active"><a href="index.html">Início</a></li>
+                    <!--
+					<li><a href="about.html">About</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+					-->
+               </ul>
+          </div>
+
+  </div>
+</div>
+
+<!-- Home Section -->
+
+<section id="home" class="main-home parallax-section">
+     <div class="overlay"></div>
+     <div id="particles-js"></div>
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-12 col-sm-12">
+                    <h2>2017</h2>
+					<h1>JAM ODYSSEY</h1>
+                    <a href="#inscricao" class="smoothScroll btn btn-default">Inscreve-te</a>
+               </div>
+
+          </div>
+     </div>
+</section>
+
+<!-- Blog Section -->
+<script>
+	function removeOverlay() {
+		var overlay = document.getElementById("djd-overlay");
+		
+		// remove children
+		while (overlay.hasChildNodes()) {
+			overlay.removeChild(overlay.lastChild);
+		}
+		
+		overlay.classList.add("djd-fade");
+		
+		setTimeout(function () {
+			overlay.remove();
+		}, 450);
+		
+	}
+</script>
+<style>
+	@keyframes djd-alphafade {
+		from {
+			background: rgba(1,1,1,0.8);
+		}
+		to {
+			background: rgba(1,1,1,0.0);
+		}
+	}
+
+	#djd-form-area {
+		width: 700px;
+		height: 450px;
+		position: relative;
+		margin: auto;
+	}
+	
+	#djd-form,
+	#djd-overlay {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		display: block;
+		width: 700px;
+		height: 450px;
+	}
+	
+	#djd-titles{
+		font-size: 50px;
+		font-family: 'Abel', sans-serif;
+	}
+	
+	#djd-register{
+		position: absolute;
+		/*left: 50%;
+		top: 50%;*/
+		margin: auto;
+		font-size: 50px;
+	}
+	
+	#djd-overlay {
+		
+		z-index: 1;
+		background: rgba(1,1,1,0.8);
+		font-family: 'Abel', sans-serif;
+	}
+	
+	.djd-fade {
+		animation-name: djd-alphafade;
+		animation-duration: 0.45s;
+	}
+</style>
+<section id="blog">
+     <div class="container">
+          <div class="row">
+               <div class="col-md-offset-1 col-md-10 col-sm-12">
+                    <div class="blog-post-thumb">
+                         <!--
+						 <div class="blog-post-image">
+							<img src="images/ludum.png" class="img-responsive" alt="Blog Image">
+                         </div>
+						 -->
+                         <div class="blog-post-title">
+                              <h3>Introdução</h3>
+                         </div>
+                         <div class="blog-post-des">
+							<p>A 2017 Jam Odyssey vai acontecer nos dias 22 e 23 de Abril, em simultâneo e incorporada na Ludum Dare, durando apenas 48 horas.</p>
+							<p>O objetivo desta game jam é experienciar a criação de jogos com outras pessoas num curto espaço de tempo.</p>
+							<p>Qualquer pessoa pode participar. Programadores, artistas gráficos, designers, escritores, amantes e não amantes de jogos, todos são bem-vindos! Principalmente aqueles que acham que não têm as habilidades necessárias para criar um jogo, porque têm aqui uma boa oportunidade para adquirir novos conhecimentos.</p>
+							<p>Inscrevam-se!</p>
+							<p>(Enviaremos um e-mail a confirmar a inscrição assim que possível).</p>
+                         </div>
+                    </div>
+                    <div class="blog-post-thumb">
+                         <!--
+						 <div class="blog-post-image">
+							<img src="images/ludum.png" class="img-responsive" alt="Blog Image">
+                         </div>
+						 -->
+                         <div class="blog-post-title">
+                              <h3>O que é uma Game Jam?</h3>
+                         </div>
+                         <div class="blog-post-des">
+							<p>Uma game jam é um evento em que as pessoas se desafiam a completar um jogo num curto espaço de tempo, podendo fazê-lo sozinhas ou em grupo. Os jogos criados têm de incorporar um tema revelado no início do evento.</p>
+							<p>Para além disso, uma game jam é um ótimo momento para as pessoas socializarem enquanto fazem jogos!</p>
+                         </div>
+                    </div>
+                    <div class="blog-post-thumb">
+                         <!--
+						 <div class="blog-post-image">
+							<img src="images/ludum.png" class="img-responsive" alt="Blog Image">
+                         </div>
+						 -->
+                         <div class="blog-post-title">
+                              <h3>O que é a Ludum Dare?</h3>
+                         </div>
+                         <div class="blog-post-des">
+							<p>A Ludum Dare é uma game jam online que costuma decorrer ao longo de um fim de semana, existindo dois formatos não-exclusivos da mesma.</p>
+							<p>No formato Compo (original) não podem participar grupos e a jam tem apenas 48 horas de duração. Todos os assets têm de ser feitos pelos participantes.</p>
+							<p>No formato Jam podem participar grupos de todos os tamanhos e a jam tem 72 horas de duração. Podem ser usados assets externos, desde que estes sejam gratuitos ou acessíveis aos restantes grupos.</p>
+							<p>Na semana anterior à Ludum Dare pode votar-se no tema da jam. Esta votação é diária, sendo que no último dia se seleciona de entre um top 20 das sugestões prévias. O tema é anunciado depois de acabar esta última fase de votações e a game jam começa imediatamente a seguir.</p>
+							<p>Após a conclusão do tempo definido para o desenvolvimento, iniciam-se as votações nos jogos submetidos, que dura duas semanas. Podem votar apenas aqueles participantes que fizeram submissões, sendo que votar traz mais exposição ao seu próprio jogo.</p>
+                         </div>
+                    </div>
+                    <div class="blog-post-thumb">
+                         <!--
+						 <div class="blog-post-image">
+							<img src="images/ludum.png" class="img-responsive" alt="Blog Image">
+                         </div>
+						 -->
+                         <div class="blog-post-title">
+                              <h3>2017 JAM ODYSSEY</h3>
+                         </div>
+                         <div class="blog-post-des">
+							<p>A 2017 Jam Odyssey segue as regras da Ludum Dare, no formato Jam, mas dura apenas 48 horas para submissão e votação interna. No entanto os participantes têm mais 24 horas para a submissão na Ludum Dare.</p>
+							<p>Etapas:</p>
+							<ul>
+								<li><p>Dia 21 às 20h00: Jantar na cantina da EsACT.</p></li>
+								<li><p>Dia 21 das 21h00 às 24h00: Convívio na Ludoteca.</p></li>
+								<li><p>Dia 22 às 01h00: Keynote.</p></li>
+								<li><p>Dia 22 às 02h00: Anúncio do tema e início da Game Jam.</p></li>
+								<li><p>Dia 24 às 12h00: Submissão interna dos jogos.</p></li>
+								<li><p>Dia 24 às 13h30: Encerramento da fase de desenvolvimento.</p></li>
+								<li><p>Dia 24 às 13h00: Almoço na cantina da EsACT.</p></li>
+								<li><p>Dia 24 às 14h30: Apresentação e votação dos trabalhos.</p></li>
+							</ul>
+                         </div>
+                    </div>
+                    <div class="blog-post-thumb">
+                         <!--
+						 <div class="blog-post-image">
+							<img src="images/ludum.png" class="img-responsive" alt="Blog Image">
+                         </div>
+						 -->
+                         <div id="inscricao" class="blog-post-title">
+                              <h3>Inscrições</h3>
+                         </div>
+                         <div class="blog-post-des">
+							<div id="djd-form-area">
+								<!--
+								<div id="djd-overlay">
+									<button id="djd-register" onclick="removeOverlay()">Inscreve-te</button>
+								</div>
+								-->
+								<iframe class="embed-responsive-item" id="djd-form" src="https://docs.google.com/forms/d/e/1FAIpQLSfKOdufEtAGVyBuWspeOjlKuajC4oX87JNnYMIv2G9QLFn9_Q/viewform?embedded=true" width="400" height="300" frameborder="0" marginheight="0" marginwidth="0">A carregar...</iframe>
+							</div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+     </div>
+</section>
+
+<!-- Footer Section -->
+
+<footer>
+     <div class="container">
+          <div class="row">
+
+               <div class="col-md-5 col-md-offset-1 col-sm-6">
+                    <h3>Núcleo de Estudantes<br/>Design de Jogos Digitais</h3>
+                    <!--<p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>-->
+                    <div class="footer-copyright">
+                         <p>Copyright &copy; 2017 NEDJD</p>
+                    </div>
+               </div>
+
+               <div class="col-md-4 col-md-offset-1 col-sm-6">
+                    <h3>Talk to us</h3>
+                    <p><i class="fa fa-globe"></i> EsACT, IPB<br/>Avenida 25 de Abril, Cruzeiro, Lote 2.<br/>Apartado 128. 5370-202 Mirandela.</p>
+                    <p><i class="fa fa-save"></i> nedjd.esact.ipb@gmail.com</p>
+               </div>
+
+               <div class="clearfix col-md-12 col-sm-12">
+                    <hr>
+               </div>
+
+               <div class="col-md-12 col-sm-12">
+                    <ul class="social-icon">
+                         <li><a href="https://www.facebook.com/nedjd.ipb/?ref=ts&fref=ts" target="_blank" class="fa fa-facebook"></a></li>
+                    </ul>
+               </div>
+               
+          </div>
+     </div>
+</footer>
+
+<!-- Back top -->
+<a href="#back-top" class="go-top"><i class="fa fa-angle-up"></i></a>
+
+<!-- SCRIPTS -->
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/particles.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/jquery.parallax.js"></script>
+<script src="js/smoothscroll.js"></script>
+<script src="js/custom.js"></script>
+
+</body>
 </html>
