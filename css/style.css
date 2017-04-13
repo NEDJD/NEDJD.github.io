@@ -678,6 +678,7 @@ footer .footer-copyright {
   line-height: 38px;
   text-align: center;
   border-radius: 100%;
+  z-index: 100;
 }
 
 .go-top:hover {
